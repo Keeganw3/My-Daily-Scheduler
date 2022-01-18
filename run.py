@@ -12,7 +12,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("bookworm's_sales")
 
-book_info = SHEET.worksheet('sheet1')
+book_info = SHEET.worksheet('Sheet1')
 
 data = book_info.get_all_values()
 
