@@ -1,19 +1,23 @@
-import gspread
-from google.oauth2.service_account import Credentials
+def add_to_day_planner():
+    """
+    Add options to the day planner
+    """
+    while True:
+        today = []
+        print("Pick one number from 1-5 to select the option you want.")
+        num = input("Enter your data here:")
+        print(f"The option selected was {num}")
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
+    return num
 
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open("bookworm's_sales")
 
-book_info = SHEET.worksheet('Sheet1')
+#def main()
 
-data = book_info.get_all_values()
-
-print(data)
+print("Welcome! This is a Day Planner!")
+print("Below are some suggestions for what you may want to do today.")
+print("You can also make your own suggestions!")
+print("Once you have 3 items in your day planner you will be asked if you're finished.")
+print("If you say yes, your list will be shown to you.")
+print("Otherwise, you will be able to add more to the day planner.")
+#main()
+add_to_day_planner()
