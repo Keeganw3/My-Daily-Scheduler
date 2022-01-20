@@ -1,6 +1,6 @@
 def add_to_day_planner():
     """
-    Add options to the day planner
+    Add options to the day planner.
     """
     while True:
         today = []
@@ -9,25 +9,27 @@ def add_to_day_planner():
         print(f"The option selected was {num}")
         validate_data(num)
         if int(num) == 1:
-            print("Eat lunch.")
+            today.append("Eat lunch")
         elif int(num) == 2:
-            print("Go for a run.")
+            today.append("Go for a run")
         elif int(num) == 3:
-            print("Walk your pet.")
+            today.append("Walk your pet")
         elif int(num) == 4:
-            print("Read a book.")
+            today.append("Read a book")
         elif int(num) == 5:
-            print("Show more options.")
+            #function to display more options called
+            print("Show more options")
         elif int(num) == 6:
-            print("Make your own option.")
+            #Function to make an option called
+            print("Make your own option")
         else:
-            print("Exit day planner.")
+            #function to exit day planner called
+            print("Exit day planner")
         
-        if validate_data(num):
-            print('number is valid!')
-            break
-
-    return num
+        print(today)
+        return False
+    
+    return today
 
 def validate_data(values):
     """
@@ -45,7 +47,11 @@ def validate_data(values):
 
     return True
 
-#def main()
+def main():
+    """
+    Runs all functions in the program.
+    """
+    planned_day = add_to_day_planner()
 
 print("Welcome! This is a Day Planner!")
 print("Below are some suggestions for what you may want to do today.")
@@ -53,5 +59,5 @@ print("You can also make your own suggestions!")
 print("Once you have 3 items in your day planner you will be asked if you're finished.")
 print("If you say yes, your list will be shown to you.")
 print("Otherwise, you will be able to add more to the day planner.")
-#main()
-add_to_day_planner()
+
+main()
