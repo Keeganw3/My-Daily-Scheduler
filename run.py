@@ -1,4 +1,4 @@
-def add_to_day_planner():
+def daily_planner():
     """
     Add options to the day planner.
     """
