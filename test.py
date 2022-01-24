@@ -1,4 +1,4 @@
-def add_to_day_planner():
+def daily_planner():
     """
     Add options to the day planner.
     """
@@ -16,7 +16,7 @@ def add_to_day_planner():
             else:
                 print("'y' or 'n' wasn't selected. Please pick one.")
                 continue
-        
+
         print("1. Eat lunch")
         print("2. Go for a run")
         print("3. Walk your pet")
@@ -41,10 +41,10 @@ def add_to_day_planner():
             print(today)
         elif int(num) == 5:
             print("Show more options")
-            #today.append(other_options())
+            today.append(other_options())
         elif int(num) == 6:
             print("Make your own option")
-            #today.append(create_option())
+            today.append(create_option())
         elif int(num) == 7:
             print("Exiting daily planner...")
             return today
@@ -53,11 +53,6 @@ def add_to_day_planner():
     return today
 
 
-def validate_input(values):
-    """
-    The try: converts all strings into integers.
-    Makes an error if strings cannot be converted into int.
-    """
 def validate_input(values):
     """
     The try: converts all strings into integers.
@@ -76,19 +71,60 @@ def validate_input(values):
         return True
 
 
+def create_option():
+    print("Type in your option below!")
+    print("If this was a mistake type exit.")
+    print("to return to previous options")
+    user_made_option = input("")
+    if user_made_option == "exit":
+        pass
+    else:
+        return user_made_option
+
+
+def other_options():
+    print("Here are some other options:")
+    print("1. Eat dinner")
+    print("2. Schedule a meeting")
+    print("3. Meet up with friends")
+    print("4. Do homework")
+    print("5. Show more options")
+    print("6. Create new option")
+    print("7. Exit daily planner.")
+    num = int(input("Enter the number here: "))
+    print(f"The option selected was {num}")
+    if int(num) == 1:
+        today.append("Eat lunch")
+        print(today)
+    elif int(num) == 2:
+        today.append("Go for a run")
+        print(today)
+    elif int(num) == 3:
+        today.append("Walk your pet")
+        print(today)
+    elif int(num) == 4:
+        today.append("Read a book")
+        print(today)
+    elif int(num) == 5:
+        print("Show more options")
+    elif int(num) == 6:
+        print("Make your own option")
+
+
 def main():
     """
     Runs all functions in the program.
     """
-    planned_day = add_to_day_planner()
-    print(planned_day)
+    plans = daily_planner()
+    print(f"Here are your plans for the day: {plans}")
+    print("I hope you enjoyed!")
 
 
 print("Welcome! This is a Day Planner!")
-print("Below are some suggestions for what you may want to do today.")
+print("Below are suggestions for what you may want to do.")
 print("You can also make your own suggestions!")
-print("Once you have 3 items in your day planner you will be asked if you're finished.")
+print("When 3 items are in your day planner you will be asked if you're done.")
 print("If you say yes, your list will be shown to you.")
 print("Otherwise, you will be able to add more to the day planner.")
-
+start = input("Hit Enter when you're ready to start the daily planner!")
 main()
