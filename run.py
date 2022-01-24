@@ -1,6 +1,8 @@
 def daily_planner():
     """
-    Add options to the day planner.
+    Allows user to options to the day planner. These options will be
+    displayed to the user throughout their time using the code
+    in a list and when they have exited the app.
     """
     today = []
     print("Pick one number from 1-7 to select the option you want.")
@@ -16,7 +18,7 @@ def daily_planner():
             else:
                 print("'y' or 'n' wasn't selected. Please pick one.")
                 continue
-        
+
         print("1. Eat lunch")
         print("2. Go for a run")
         print("3. Walk your pet")
@@ -98,7 +100,7 @@ def main():
 print("Welcome! This is a Day Planner!")
 print("Below are some suggestions for what you may want to do today.")
 print("You can also make your own suggestions!")
-print("Once you have 3 items in your day planner you will be asked if you're finished.")
+print("When 3 items are in the day planner the user be asked if they're done.")
 print("If you say yes, your list will be shown to you.")
 print("Otherwise, you will be able to add more to the day planner.")
 start = input("Hit Enter when you're ready to start the daily planner!")

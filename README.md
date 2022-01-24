@@ -55,6 +55,7 @@ screenshot()
 
 ## Programs Used
 * lucid.app: used to create the flowchart for this project.
+screenshot()(detail?)
 * Git: used for creating the code for this project and sending it to GitHub.
 * GitHub: a repository for the code after being made in Git.
 * Heroku: used to deploy the application and hosts a page for the code.
@@ -62,7 +63,8 @@ screenshot()
 # Testing
 ## Validator Testing
 ### Python Testing
-
+* No errors or warnings were found through the PEP8 online validator.
+![Screenshot](/assets/screenshots/pep8_validator_screenshot.jpg)
 
 ## Manual Testing
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
