@@ -44,7 +44,10 @@ def daily_planner():
             #today.append(other_options())
         elif int(num) == 6:
             print("Make your own option")
-            #today.append(create_option())
+            if create_option() == "exit":
+                continue
+            else:
+                today.append(create_option())
         elif int(num) == 7:
             print("Exiting daily planner...")
             return today
@@ -53,11 +56,18 @@ def daily_planner():
     return today
 
 
-def validate_input(values):
+def create_option():
     """
-    The try: converts all strings into integers.
-    Makes an error if strings cannot be converted into int.
+    Allows the user to make their own option
+    for the daily planner.
     """
+    print("Type in your option below!")
+    print("If this was a mistake type 'exit'.")
+    print("to return to previous options")
+    user_made_option = input("")
+    return user_made_option
+
+
 def validate_input(values):
     """
     The try: converts all strings into integers.
