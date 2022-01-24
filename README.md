@@ -8,18 +8,18 @@ The user can input all the activities they would like to do and the application 
 # Features
 ## Existing Features
 ## Main Menu
-The user is told what the program is and how to use it. This leads to the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format. 
-The first 4 options are suggestions for their schedule and option 6 lets the user make their own option. The user can leave the program whenever they're on the menu by clicking 7.
+* The user is told what the program is and how to use it. This leads to the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format. 
+* The first 4 options are suggestions for their schedule and option 6 lets the user make their own option. The user can leave the program whenever they're on the menu by clicking 7.
 screenshot()
 
-The user will always be shown their current list everytime a value has been added to them. 
+* The user will always be shown their current list everytime a value has been added to them. 
 
-The user is asked to enter a number from 1-7. If they use a number outside of this range an error is displayed which asks the user pick a number within this range and returns them to the main menu. (add extra enter?)
+* The user is asked to enter a number from 1-7. If they use a number outside of this range an error is displayed which asks the user pick a number within this range and returns them to the main menu. (add extra enter?)
 screenshot()
 
 ## User created options
-The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
-The user can exit this prompt by typing 'exit' if they came in here by mistake. This will not affect the user's list and they will be returned to the main menu.
+* The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
+* The user can exit this prompt by typing 'exit' if they came in here by mistake. This will not affect the user's list and they will be returned to the main menu.
 
 
 ## Header
@@ -39,18 +39,6 @@ The user can exit this prompt by typing 'exit' if they came in here by mistake. 
 
 ![Screenshot](/assets/screenshots/game-area-screenshot.png)
 
-## Score Board
-* This section shows the user the number of answers that they have gotten correct.
-* This will change as more types of farms are displayed on social media.
-
-![Screenshot](/assets/screenshots/score-board-screenshot.png)
-
-## Logo
-* This shows a logo pertaining to the show that the site was meant to be based on.
-
-![Screenshot](/assets/screenshots/logo-screenshot.png)
-
-
 # Future Features to be added 
 ## Results page
 * This would open a new page that would tell the user what their score was and the amount of money they won.
@@ -60,6 +48,16 @@ The user can exit this prompt by typing 'exit' if they came in here by mistake. 
 * This would've made it so different questions are asked on each attempt. This would be limited to 3 attempts.
 ## Halting Progress
 * The user would have to restart from the beginning when they got a question wrong. This would've made the game more difficult to play through.
+
+# Technologies Used
+## Languages Used
+* Python
+
+## Programs Used
+* lucid.app: used to create the flowchart for this project.
+* Git: used for creating the code for this project and sending it to GitHub.
+* GitHub: a repository for the code after being made in Git.
+* Heroku: used to deploy the application and hosts a page for the code.
 
 # Testing
 ## Validator Testing
