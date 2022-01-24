@@ -7,6 +7,21 @@ The user can input all the activities they would like to do and the application 
 
 # Features
 ## Existing Features
+## Main Menu
+The user is told what the program is and how to use it. This leads to the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format. 
+The first 4 options are suggestions for their schedule and option 6 lets the user make their own option. The user can leave the program whenever they're on the menu by clicking 7.
+screenshot()
+
+The user will always be shown their current list everytime a value has been added to them. 
+
+The user is asked to enter a number from 1-7. If they use a number outside of this range an error is displayed which asks the user pick a number within this range and returns them to the main menu. (add extra enter?)
+screenshot()
+
+## User created options
+The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
+The user can exit this prompt by typing 'exit' if they came in here by mistake. This will not affect the user's list and they will be returned to the main menu.
+
+
 ## Header
 * This tells the user the name of the quiz.
 
