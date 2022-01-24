@@ -83,7 +83,10 @@ def create_option():
 
 
 def other_options():
-    print("Here are some other options:")
+    """
+    Gives the user extra options to select.
+    """
+    print("Here are some additional options:")
     print("1. Eat dinner")
     print("2. Schedule a meeting")
     print("3. Meet up with friends")
@@ -94,7 +97,6 @@ def other_options():
     num = int(input("Enter the number here: "))
     print(f"The option selected was {num}")
     if int(num) == 1:
-        today.append("Eat lunch")
         print(today)
     elif int(num) == 2:
         today.append("Go for a run")
@@ -107,8 +109,8 @@ def other_options():
         print(today)
     elif int(num) == 5:
         print("Show more options")
-    elif int(num) == 6:
-        print("Make your own option")
+    else:
+        validate_input(num)
 
 
 def main():

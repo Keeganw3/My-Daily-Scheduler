@@ -41,7 +41,7 @@ def daily_planner():
             print(today)
         elif int(num) == 5:
             print("Show more options")
-            #today.append(other_options())
+            today.append(other_options())
         elif int(num) == 6:
             print("Make your own option")
             if create_option() == "exit":
