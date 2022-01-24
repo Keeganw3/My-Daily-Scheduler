@@ -80,8 +80,9 @@ def main():
     """
     Runs all functions in the program.
     """
-    planned_day = add_to_day_planner()
-    print(planned_day)
+    plans = daily_planner()
+    print(f"Here are your plans for the day: {plans}")
+    print("I hope you enjoyed!")
 
 
 print("Welcome! This is a Day Planner!")
@@ -90,5 +91,6 @@ print("You can also make your own suggestions!")
 print("Once you have 3 items in your day planner you will be asked if you're finished.")
 print("If you say yes, your list will be shown to you.")
 print("Otherwise, you will be able to add more to the day planner.")
+start = input("Hit Enter when you're ready to start the daily planner!")
 
 main()

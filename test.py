@@ -127,4 +127,5 @@ print("When 3 items are in your day planner you will be asked if you're done.")
 print("If you say yes, your list will be shown to you.")
 print("Otherwise, you will be able to add more to the day planner.")
 start = input("Hit Enter when you're ready to start the daily planner!")
+
 main()
