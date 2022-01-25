@@ -8,7 +8,8 @@ The user can input all the activities they would like to do and the application 
 # Features
 ## Existing Features
 ## Welcome Screen
-* The user is told what the program is and how to use it. After they hit enter it shows the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format. 
+* The user is told what the program is and how to use it. After they hit enter it shows the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format.
+
 ![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
 
 ## Main Menu
@@ -36,10 +37,10 @@ The user can input all the activities they would like to do and the application 
 * Once the list has 3 tasks in it, the user is prompted to exit the daily planner by hitting "y" or "n". If they enter another key the code will tell them they hit the wrong key and ask them to put in "y" or "n". "y" or "n" can be put in with spaces or as capital letters to give the user more flexibilty when using the app.
 ![Screenshot](/assets/screenshots/exit_planner_screenshot.jpg)
 
-If they hit "y", they will leave the planner. They will have to hit enter to get to the End Results screen.
+* If they hit "y", they will leave the planner. They will have to hit enter to get to the End Results screen.
 ![Screenshot](/assets/screenshots/y_exit_planner_screenshot.jpg)
 
-If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task. They will have to hit enter once again to return to the main menu.
+* If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task. They will have to hit enter once again to return to the main menu.
 ![Screenshot](/assets/screenshots/n_exit_planner_screenshot.jpg)
 
 ## End Results Screen
@@ -47,7 +48,7 @@ If they hit "n" they can add another task and will be asked if they want to leav
 ![Screenshot](/assets/screenshots/end_results_screenshot.jpg)
 
 # Future Features to be added 
-## Times
+## Time Allotments
 * I would ike the user to be able to set these tasks to go on for a set amount of time to allow them to better plan out their day. They could also set a start and end time and try to work within these confines.
 
 ## Improved UI of End Results Screen
