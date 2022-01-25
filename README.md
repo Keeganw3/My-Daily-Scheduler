@@ -75,13 +75,32 @@ For media queries 768px, 500px and below the text across the website is shrunk i
 When creating an option to be used the code will ask you for it twice. This doesn't happen if exit is used the first time the user is asked but if it is used when prompted the second time it will add this to the list. Using exit the first time won't add it to the list. I couldn't figure out why this problem happened.
 
 # Deployment
-For all of the below steps you must head to Github.
+This app was deployed using Heroku.
+* Log into Heroku and make an account.
+* In your gitpod code create a file called 'requirements.txt' and add all of your code's dependencies to it.
+* Go back to Heroku and click create new app. This app must have a unique name and a region.
+* Now go to the Settings tab and scroll down to the Config Vars section. You will see two inputs called key and value.
+* For the first key put CREDS and paste the contents of creds.json into value. 
+* For the second key put PORT and '8000' into value.
+* Scroll furthur down on this tab to Buildpack. 
+* Click 'add Buildpack' and select Python. Do this again and select Node.js. Make sure Python is first and Node.js is second or it could affect your code.
+* Go to the Deploy tab and you will see the deployment method, click Github. Enter the name of your repository and you will be given a list of the closest names that resemble what you have typed, click the one you want for this app.
+* Scroll down to the Automatic Deploys section and click automatic deploy. This will make the app update to launch the latest cade that was pushed to Github everytime it is opened.
+* You can also use Manual Deploy if this is the final version of your code.  
+* Click Open App in the top right of the screen and the app should run.
+
+## Forking
 * Log into Github
 * Load up the required repository.
-* Go to Settings and scroll down to Github pages (this will open up a new webpage).
-* Click on the dropdown menu called "None" and then select "Master Branch".
-* A second dropdown menu should appear that says "/root" and a button that says Save.
-* Click Save and now the link for the website has been made.
+* In the top right of the screen below the profile icon there is a fork button, click this.
+* The repository should now be copied onto your Github account.
+
+## Cloning
+* Log into Github and choose a repository.
+* Click on the green code button.
+* You will be given three ways to clone the code. If you're using https, click “Clone with https” and copy the link.
+* Open the terminal and type in the command "git clone" followed by a space and the copied url.
+* The repository will now be cloned onto the computer.
 
 # Acknowledgements
 

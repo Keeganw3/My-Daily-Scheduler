@@ -10,7 +10,7 @@ def daily_planner():
     while True:
         if len(today) >= 3:
             print("Would you like to exit the daily planner?")
-            user_input = input(f"Hit 'y' for yes and 'n' for no: ")
+            user_input = input(f"Hit 'y' for yes and 'n' for no:\n")
             print("")
             if user_input.strip().lower() == "y":
                 print("Exiting daily planner...")
@@ -29,7 +29,7 @@ def daily_planner():
         print(f"6. Exit daily planner.\n")
 
         try:
-            num = int(input("Enter your number here: "))
+            num = int(input(f"Enter your number here:\n"))
         except ValueError:
             print("Invalid you didn't enter a number.")
             input("Hit Enter to return to the main menu")
@@ -54,6 +54,7 @@ def daily_planner():
         elif num == 5:
             print("Make your own option")
             if create_option() == "exit":
+                print(today)
                 print("")
             else:
                 today.append(create_option())
@@ -74,7 +75,7 @@ def create_option():
     print("Type in your option below!")
     print("If this was a mistake type 'exit'")
     print("to return to previous options.")
-    user_made_option = input("")
+    user_made_option = input(f"\n")
     return user_made_option
 
 
