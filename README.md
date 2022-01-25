@@ -7,47 +7,51 @@ The user can input all the activities they would like to do and the application 
 
 # Features
 ## Existing Features
+## Welcome Screen
+* The user is told what the program is and how to use it. After they hit enter it shows the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format. 
+![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+
 ## Main Menu
-* The user is told what the program is and how to use it. This leads to the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format. 
-* The first 4 options are suggestions for their schedule and option 6 lets the user make their own option. The user can leave the program whenever they're on the menu by clicking 7.
-screenshot()
+* The first 4 options are suggestions for their schedule and option 5 lets the user make their own option. The user can leave the program when they're on the menu by clicking 6.
+![Screenshot](/assets/screenshots/main_menu_screenshot.jpg)
 
-* The user will always be shown their current list everytime a value has been added to them. 
+* When an option is chosen and placed in the list it is displayed a line space away from the choices to give the user better readability. The user will always be shown their current list everytime a task has been added to it. 
+![Screenshot](/assets/screenshots/list_screenshot.jpg)
 
-* The user is asked to enter a number from 1-7. If they use a number outside of this range an error is displayed which asks the user pick a number within this range and returns them to the main menu. (add extra enter?)
-screenshot()
+## Main Menu Validator
+* The user is asked to enter a number from 1-6. If they use a number outside of this range an error is displayed which asks the user to pick a number within this range and asks them to hit enter to return them to the main menu.
+![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+
+* The user is given a similar response if they submit a letter instead of a number.
+![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
 
 ## User created options
 * The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
+![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+
 * The user can exit this prompt by typing 'exit' if they came in here by mistake. This will not affect the user's list and they will be returned to the main menu.
+![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
 
+## Exiting Daily Planner
+* Once the list has 3 tasks in it, the user is prompted to exit the daily planner by hitting "y" or "n". If they enter another key the code will tell them they hit the wrong key and ask them to put in "y" or "n". "y" or "n" can be put in with spaces or as capital letters to give the user more flexibilty when using the app.
+![Screenshot](/assets/screenshots/list_screenshot.jpg)
 
-## Header
-* This tells the user the name of the quiz.
+If they hit "y", they will leave the planner.
+![Screenshot](/assets/screenshots/list_screenshot.jpg)
 
-![Screenshot](/assets/screenshots/header-screenshot.png)
+If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task.
+![Screenshot](/assets/screenshots/list_screenshot.jpg)
 
-
-## Question Container
-* This section shows the questions being asked to the user.
-
-![Screenshot](/assets/screenshots/question-container-screenshot.png)
-
-## Game Area
-* This area is for the placement of the answers. 
-* The user can select an answer to the question being asked in the question container.
-
-![Screenshot](/assets/screenshots/game-area-screenshot.png)
+## End Results Screen
+* This screen displays the full schedule that the user has made up for the day in a list so it is clearly visible and easy to find once you are done with the app.
+![Screenshot](/assets/screenshots/end_results_screenshot.jpg)
 
 # Future Features to be added 
-## Results page
-* This would open a new page that would tell the user what their score was and the amount of money they won.
-## Animated header
-* This would flash at the user to how the game show Who Wants To Be a Millionaire Logo did.
-## Randomised Questions
-* This would've made it so different questions are asked on each attempt. This would be limited to 3 attempts.
-## Halting Progress
-* The user would have to restart from the beginning when they got a question wrong. This would've made the game more difficult to play through.
+## Times
+* I would ike the user to be able to set these tasks to go on for a set amount of time to allow them to better plan out their day. They could also set a start and end time and try to work within these confines.
+
+## Improved UI of End Results Screen
+I would like the final display of the user's daily plan to be displayed one at a time on a line instead of all together in the list. I tried to make this a couple times but couldn't figure it out before submission.
 
 # Technologies Used
 ## Languages Used
@@ -66,22 +70,17 @@ screenshot()(detail?)
 * No errors or warnings were found through the PEP8 online validator.
 ![Screenshot](/assets/screenshots/pep8_validator_screenshot.jpg)
 
-## Manual Testing
-I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
-
-For media queries 768px, 500px and below the text across the website is shrunk in order to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries weren't needed at sizes larger than this.
-
 ## Known Bugs
 When creating an option to be used the code will ask you for it twice. This doesn't happen if exit is used the first time the user is asked but if it is used when prompted the second time it will add this to the list. Using exit the first time won't add it to the list. I couldn't figure out why this problem happened.
 
 # Deployment
 This app was deployed using Heroku.
 * Log into Heroku and make an account.
-* In your gitpod code create a file called 'requirements.txt' and add all of your code's dependencies to it.
+* In your gitpod code create a file called "requirements.txt" and add all of your code's dependencies to it.
 * Go back to Heroku and click create new app. This app must have a unique name and a region.
 * Now go to the Settings tab and scroll down to the Config Vars section. You will see two inputs called key and value.
 * For the first key put CREDS and paste the contents of creds.json into value. 
-* For the second key put PORT and '8000' into value.
+* For the second key put PORT and "8000" into value.
 * Scroll furthur down on this tab to Buildpack. 
 * Click 'add Buildpack' and select Python. Do this again and select Node.js. Make sure Python is first and Node.js is second or it could affect your code.
 * Go to the Deploy tab and you will see the deployment method, click Github. Enter the name of your repository and you will be given a list of the closest names that resemble what you have typed, click the one you want for this app.

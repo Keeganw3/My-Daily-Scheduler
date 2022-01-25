@@ -13,9 +13,11 @@ def daily_planner():
             user_input = input(f"Hit 'y' for yes and 'n' for no:\n")
             print("")
             if user_input.strip().lower() == "y":
+                input(f"You are now leaving the daily planner:\n")
                 print("Exiting daily planner...")
                 return today
             elif user_input.strip().lower() == "n":
+                input(f"You selected 'n' and will be returned to the main menu:\n")
                 pass
             else:
                 print("'y' or 'n' wasn't selected. Please pick one.")
@@ -63,6 +65,8 @@ def daily_planner():
         elif num == 6:
             print("Exiting daily planner...")
             return today
+        else:
+            print(f"Number out of range. Pick a number from 1-6.\n")
     return today
 
 
