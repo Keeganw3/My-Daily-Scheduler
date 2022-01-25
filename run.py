@@ -6,7 +6,7 @@ def daily_planner():
     list and when they have exited the app.
     """
     today = []
-    print("Pick a number from 1-7 to select the option you want.")
+    print("Pick a number from 1-6 to select the option you want.")
     while True:
         if len(today) >= 3:
             print("Would you like to exit the daily planner?")
@@ -25,9 +25,8 @@ def daily_planner():
         print("2. Go for a run")
         print("3. Walk your pet")
         print("4. Read a book")
-        print("5. Show more options")
-        print("6. Create new option")
-        print(f"7. Exit daily planner.\n")
+        print("5. Create new option")
+        print(f"6. Exit daily planner.\n")
 
         try:
             num = int(input("Enter your number here: "))
@@ -53,10 +52,6 @@ def daily_planner():
             print(today)
             print("")
         elif num == 5:
-            print("Show more options")
-            today.append(other_options())
-            print("")
-        elif num == 6:
             print("Make your own option")
             if create_option() == "exit":
                 print("")
@@ -64,7 +59,7 @@ def daily_planner():
                 today.append(create_option())
                 print(today)
                 print("")
-        elif num == 7:
+        elif num == 6:
             print("Exiting daily planner...")
             return today
     return today
@@ -96,7 +91,7 @@ if __name__ == "__main__":
     print("Welcome! This is a Daliy Planner!")
     print("Below are some suggestions for what you may want to do today.")
     print("You can also make your own suggestions!")
-    print("When 3 tasks are in your day planner you will be asked if you're done.")
+    print("You'll be asked if you're done when you've add 3 tasks.")
     print("If you say yes, your list will be shown to you.")
     print(f"Otherwise, you will be able to add more to the day planner.\n")
     input(f"Hit Enter when you're ready to start the daily planner!\n")

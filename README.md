@@ -71,8 +71,8 @@ I tested the media queries by manually adjusting the screen size from roughly 50
 
 For media queries 768px, 500px and below the text across the website is shrunk in order to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries weren't needed at sizes larger than this.
 
-## Unfixed Bugs
-Questions display - The choices for each question after question 1 show up below the previous question which is off-putting. This wasn't fixed due to time and lack of resources. I tried for several hours across multiple days to get help from online tutorials, friends, mentors, Slack and student support tutors who unfortunately weren't able to give me enough help to fix this problem. The code javascript code was written 3 different times which can be seen by going through the commits and all of them ended up with problems I didn't have the knowledge to solve.
+## Known Bugs
+When creating an option to be used the code will ask you for it twice. This doesn't happen if exit is used the first time the user is asked but if it is used when prompted the second time it will add this to the list. Using exit the first time won't add it to the list. I couldn't figure out why this problem happened.
 
 # Deployment
 For all of the below steps you must head to Github.
@@ -86,9 +86,5 @@ For all of the below steps you must head to Github.
 # Acknowledgements
 
 ## Credits
-* My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
-* My lecturer Simen Daehlin who helped me to better write my code and solve a couple problems I had run into.
-* The people from slack room who answered my questions when I needed it.
+* My mentor Brian Macharia who supported me and provided me with both feedback, examples and solutions to problems I faced while creating this project.
 * Code institute for the classes, sources and tutors that they provided me.
-* The people at student support who tried to help me for several hours.
-* Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
