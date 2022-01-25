@@ -1,6 +1,6 @@
-# Daily Planner
+# My Daily Scheduler
 ## Project Description
-<p> Daily Planner is a command line application to help you plan out what you would like to do in a day no matter what that may be!
+<p> My Daily Scheduler is a command line application to help you plan out what you would like to do in a day no matter what that may be!
 
 The user can input all the activities they would like to do and the application will give them back to the user in a list for them to do as they please.
 </p>
@@ -19,28 +19,28 @@ The user can input all the activities they would like to do and the application 
 ![Screenshot](/assets/screenshots/list_screenshot.jpg)
 
 ## Main Menu Validator
-* The user is asked to enter a number from 1-6. If they use a number outside of this range an error is displayed which asks the user to pick a number within this range and asks them to hit enter to return them to the main menu.
-![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+* The user is asked to enter a number from 1-6. If they use a number outside of this range an error is displayed which asks the user to pick a number within this range.
+![Screenshot](/assets/screenshots/incorrect_num_screenshot.jpg)
 
 * The user is given a similar response if they submit a letter instead of a number.
-![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+![Screenshot](/assets/screenshots/incorrect_variable_screenshot.jpg)
 
 ## User created options
 * The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
-![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
-
-* The user can exit this prompt by typing 'exit' if they came in here by mistake. This will not affect the user's list and they will be returned to the main menu.
-![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+![Screenshot](/assets/screenshots/create_options_screenshot.jpg)
+ 
+* The user can exit this screen by typing 'exit'. This will not affect the user's list and they will be returned to the main menu. This gives the user a chance to go back to the main menu if they didn't mean to come to this screen.
+![Screenshot](/assets/screenshots/exit_create_options_screenshot.jpg)
 
 ## Exiting Daily Planner
 * Once the list has 3 tasks in it, the user is prompted to exit the daily planner by hitting "y" or "n". If they enter another key the code will tell them they hit the wrong key and ask them to put in "y" or "n". "y" or "n" can be put in with spaces or as capital letters to give the user more flexibilty when using the app.
-![Screenshot](/assets/screenshots/list_screenshot.jpg)
+![Screenshot](/assets/screenshots/exit_planner_screenshot.jpg)
 
-If they hit "y", they will leave the planner.
-![Screenshot](/assets/screenshots/list_screenshot.jpg)
+If they hit "y", they will leave the planner. They will have to hit enter to get to the End Results screen.
+![Screenshot](/assets/screenshots/y_exit_planner_screenshot.jpg)
 
-If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task.
-![Screenshot](/assets/screenshots/list_screenshot.jpg)
+If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task. They will have to hit enter once again to return to the main menu.
+![Screenshot](/assets/screenshots/n_exit_planner_screenshot.jpg)
 
 ## End Results Screen
 * This screen displays the full schedule that the user has made up for the day in a list so it is clearly visible and easy to find once you are done with the app.
