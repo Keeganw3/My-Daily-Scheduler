@@ -34,7 +34,7 @@ def daily_planner():
             num = int(input(f"Enter your number here:\n"))
         except ValueError:
             print("Invalid you didn't enter a number.")
-            input("Hit Enter to return to the main menu")
+            input("Hit Enter to return to the main menu.")
             continue
 
         if num == 1:
@@ -93,11 +93,11 @@ def main():
 
 
 if __name__ == "__main__":
-    print("Welcome! This is a Daliy Planner!")
+    print("Welcome! This is a Daily Scheduler!")
     print("Below are some suggestions for what you may want to do today.")
     print("You can also make your own suggestions!")
     print("You'll be asked if you're done when you've add 3 tasks.")
-    print("If you say yes, your list will be shown to you.")
+    print("If you say yes, your list of tasks will be shown to you.")
     print(f"Otherwise, you will be able to add more to the day planner.\n")
     input(f"Hit Enter when you're ready to start the daily planner!\n")
     main()
