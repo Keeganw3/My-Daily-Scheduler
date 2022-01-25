@@ -1,19 +1,21 @@
 def daily_planner():
     """
-    Allows user to add options to the day planner. These options will be
-    displayed to the user throughout their time using the code
-    in a list and when they have exited the app.
+    Allows user to add options to the day planner.
+    These options will be displayed to the user
+    throughout their time using the code in a
+    list and when they have exited the app.
     """
     today = []
     print("Pick a number from 1-7 to select the option you want.")
     while True:
         if len(today) >= 3:
             print("Would you like to exit the daily planner?")
-            user_input = input(f"Hit 'y' for yes and 'n' for no:\n ")
-            if user_input == "y":
+            user_input = input(f"Hit 'y' for yes and 'n' for no: ")
+            print("")
+            if user_input.strip().lower() == "y":
                 print("Exiting daily planner...")
                 return today
-            elif user_input == "n":
+            elif user_input.strip().lower() == "n":
                 pass
             else:
                 print("'y' or 'n' wasn't selected. Please pick one.")
@@ -26,37 +28,43 @@ def daily_planner():
         print("5. Show more options")
         print("6. Create new option")
         print(f"7. Exit daily planner.\n")
-        
+
         try:
-            num = int(input(f"Enter the number here:\n "))
-            print(f"The option selected was {num}")
+            num = int(input("Enter your number here: "))
         except ValueError:
             print("Invalid you didn't enter a number.")
             input("Hit Enter to return to the main menu")
-            continue            
+            continue
 
-        if int(num) == 1:
+        if num == 1:
             today.append("Eat lunch")
             print(today)
-        elif int(num) == 2:
+            print("")
+        elif num == 2:
             today.append("Go for a run")
             print(today)
-        elif int(num) == 3:
+            print("")
+        elif num == 3:
             today.append("Walk your pet")
             print(today)
-        elif int(num) == 4:
+            print("")
+        elif num == 4:
             today.append("Read a book")
             print(today)
-        elif int(num) == 5:
+            print("")
+        elif num == 5:
             print("Show more options")
             today.append(other_options())
-        elif int(num) == 6:
+            print("")
+        elif num == 6:
             print("Make your own option")
             if create_option() == "exit":
-                continue
+                print("")
             else:
                 today.append(create_option())
-        elif int(num) == 7:
+                print(today)
+                print("")
+        elif num == 7:
             print("Exiting daily planner...")
             return today
     return today
@@ -65,12 +73,13 @@ def daily_planner():
 def create_option():
     """
     Allows the user to make their own option
-    for the daily planner.
+    for the daily planner. This option is
+    returned by the function.
     """
     print("Type in your option below!")
-    print("If this was a mistake type 'exit'.")
-    print("to return to previous options")
-    user_made_option = input(f"")
+    print("If this was a mistake type 'exit'")
+    print("to return to previous options.")
+    user_made_option = input("")
     return user_made_option
 
 
@@ -83,7 +92,7 @@ def main():
     print("I hope you enjoyed!")
 
 
-if __name__:
+if __name__ == "__main__":
     print("Welcome! This is a Daliy Planner!")
     print("Below are some suggestions for what you may want to do today.")
     print("You can also make your own suggestions!")
@@ -92,4 +101,3 @@ if __name__:
     print(f"Otherwise, you will be able to add more to the day planner.\n")
     input(f"Hit Enter when you're ready to start the daily planner!\n")
     main()
-
